@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Mom!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@300;400&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background-color: #fffbea;
+            font-family: 'Quicksand', sans-serif;
+            text-align: center;
+            padding: 20px;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: #ff6b6b;
+            font-size: 3rem;
+            margin-top: 50px;
+        }
+
+        p {
+            font-size: 1.2rem;
+            color: #4a4a4a;
+            margin-top: 20px;
+            line-height: 1.6;
+        }
+
+        .quote {
+            margin: 30px auto;
+            max-width: 600px;
+            font-style: italic;
+            color: #6a6a6a;
+        }
+
+        .heart {
+            color: #ff6b6b;
+            font-size: 2rem;
+            animation: beat 1s infinite;
+        }
+
+        @keyframes beat {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.2);
+            }
+        }
+
+        .balloons {
+            position: absolute;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+            overflow: hidden;
+            pointer-events: none;
+        }
+
+        .balloon {
+            width: 50px;
+            height: 70px;
+            background-color: #ffbe76;
+            border-radius: 50%;
+            position: absolute;
+            animation: float 6s ease-in-out infinite;
+        }
+
+        .balloon::after {
+            content: '';
+            width: 2px;
+            height: 50px;
+            background: #ffbe76;
+            position: absolute;
+            top: 70px;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+        .balloon:nth-child(1) {
+            left: 10%;
+            animation-duration: 5s;
+            background-color: #ff9ff3;
+        }
+
+        .balloon:nth-child(2) {
+            left: 30%;
+            animation-duration: 7s;
+            background-color: #74b9ff;
+        }
+
+        .balloon:nth-child(3) {
+            left: 50%;
+            animation-duration: 4s;
+            background-color: #55efc4;
+        }
+
+        .balloon:nth-child(4) {
+            left: 70%;
+            animation-duration: 6s;
+            background-color: #fdcb6e;
+        }
+
+        .balloon:nth-child(5) {
+            left: 90%;
+            animation-duration: 8s;
+            background-color: #fab1a0;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(100vh);
+            }
+            100% {
+                transform: translateY(-10vh);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="balloons">
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+        <div class="balloon"></div>
+    </div>
+
+    <h1>Happy Birthday, Mom! <span class="heart">&#10084;</span></h1>
+    <p>You are the heart and soul of our family, the brightest light in our lives, and the person who makes everything better just by being you.</p>
+
+    <div class="quote">
+        "A mother’s love is the fuel that enables a normal human being to do the impossible."
+    </div>
+
+    <p>May your day be filled with sunshine, laughter, and all the things that make you smile. You deserve nothing less than the best on your special day.</p>
+
+    <div class="quote">
+        "Life doesn’t come with a manual. It comes with a mother."
+    </div>
+
+    <p>Thank you for all the love, lessons, and endless support. We love you more than words can express!</p>
+</body>
+</html>
